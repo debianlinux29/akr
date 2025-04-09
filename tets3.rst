@@ -26,9 +26,8 @@ Installation
 
 .. code-block:: python
 
-import os 
-import re
-
+    import os 
+    import re
 Utilisation
 -----------
 
