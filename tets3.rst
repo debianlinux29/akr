@@ -24,7 +24,7 @@ Structure du projet
 Installation
 ------------
 
-.. code-block::
+.. code-block:: bash
 
     python setup.py install
 
