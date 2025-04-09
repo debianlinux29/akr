@@ -24,9 +24,10 @@ Structure du projet
 Installation
 ------------
 
-.. code-block:: bash
+.. code-block:: python
 
-    python setup.py install
+import os 
+import re
 
 Utilisation
 -----------
