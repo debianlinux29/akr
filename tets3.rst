@@ -24,7 +24,7 @@ Structure du projet
 Installation
 ------------
 
-.. code-block:: python
+.. highlight:: python
 
 import os 
 import re
