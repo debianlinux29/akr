@@ -24,10 +24,22 @@ Structure du projet
 Installation
 ------------
 
-.. code-block:: python
+.. example-code::
 
-    import os 
-    import re
+  .. code-block:: JSON
+
+    {
+      "key": "value"
+    }
+
+  .. code-block:: python
+
+    pygments_style = 'sphinx'
+
+
+  .. code-block:: ruby
+
+    print "Hello, World!\n"
 Utilisation
 -----------
 
