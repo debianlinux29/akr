@@ -40,6 +40,7 @@ Installation
   .. code-block:: ruby
 
     print "Hello, World!\n"
+
 Utilisation
 -----------
 
