@@ -1,0 +1,55 @@
+@startuml
+package "LangChain" {
+    class "LangChain" {
+        +createChain()
+        +runChain()
+    }
+
+    class "Chain" {
+        +addStep(step: Step)
+        +execute(input: Input): Output
+    }
+
+    class "Step" {
+        +process(input: Input): Output
+    }
+
+    class "Agent" {
+        +decideAction(input: Input): Action
+    }
+
+    class "Tool" {
+        +execute(input: Input): Output
+    }
+
+    class "Model" {
+        +generateResponse(input: Input): Output
+    }
+
+    class "Input" {
+        +data: String
+    }
+
+    class "Output" {
+        +data: String
+    }
+
+    class "Action" {
+        +type: String
+        +parameters: Map
+    }
+    
+note right of Agent
+  voir fichier diagramme_dactivite.wsd
+end note
+
+    LangChain --> Chain
+    Chain --> Step
+    Chain --> Agent
+    Agent --> Tool
+    Tool --> Model
+    Step --> Input
+    Step --> Output
+}
+
+@enduml

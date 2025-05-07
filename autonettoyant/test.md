@@ -8,3 +8,6 @@ commentaire --> utiliser langchain memory pour générer un resultat pour le que
 {"role": "user", "content": "créer un simple cahier de charge pour un autonettoyant plaque solaire"},
 
 ==============================
+
+("system", "on prendre en compte le {conversation_history} générer des code sans explication"),
+("user", "{user_message}")
