@@ -1,0 +1,19 @@
+@startuml
+start
+
+:Recevoir l'entrée;
+:Analyser l'entrée;
+
+if (L'entrée nécessite une action?) then (oui)
+    :Décider de l'action à entreprendre;
+    :Sélectionner l'outil approprié;
+    :Exécuter l'action avec l'outil;
+    :Recevoir la sortie de l'outil;
+else (non)
+    :Retourner une réponse par défaut;
+endif
+
+:Terminer le processus;
+
+stop
+@enduml

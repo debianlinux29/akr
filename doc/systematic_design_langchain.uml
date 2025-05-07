@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+
+actor Designer
+actor "Expert en Biomimétisme" as Expert
+actor "Système Externe" as ExternalSystem
+
+rectangle "Système de Design" {
+    usecase "Identifier le problème" as UC1
+    usecase "Rechercher des solutions biomimétiques" as UC2
+    usecase "Évaluer les solutions" as UC3
+    usecase "Prototyper une solution" as UC4
+    usecase "Tester le prototype" as UC5
+    usecase "Recevoir des retours" as UC6
+}
+
+Designer --> UC1
+Designer --> UC2
+Designer --> UC4
+Designer --> UC5
+Designer --> UC6
+
+Expert --> UC3
+ExternalSystem --> UC2
+
+@enduml
